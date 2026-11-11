@@ -1,12 +1,18 @@
-import { UserButton } from '@clerk/nextjs'
-import React from 'react'
+import ProjectList from "@/components/custom/dashboard/ProjectList";
+import WelcomeBanner from "@/components/custom/dashboard/WelcomeBanner";
+import { UserButton } from "@clerk/nextjs";
+import React from "react";
 
 function DashboardPage() {
   return (
     <div>
-      
+      {/* WELCOME BANNER */}
+      <WelcomeBanner />
+
+      {/* PROJECTS LIST / EMPTY STATE */}
+      <ProjectList />
     </div>
-  )
+  );
 }
 
-export default DashboardPage
+export default DashboardPage;

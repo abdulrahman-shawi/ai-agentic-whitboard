@@ -10,7 +10,9 @@ function DashBoardLayout({ children }: { children: React.ReactNode }) {
         <AppSidebar />
         <div className="flex flex-1 flex-col">
           <AppHeader/>
-          {children}
+          <div className="p-10">
+            {children}
+          </div>
         </div>
       </SidebarProvider>
     </div>
