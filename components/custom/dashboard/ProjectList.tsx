@@ -14,6 +14,7 @@ function ProjectList() {
           <h2 className='text-lg font-semibold'>No Projects Found</h2>
           <Button className='mt-5'>+ Create New Project</Button>
         </div>
+        
       ) : (
         // Project List
         <div className="p-10">
