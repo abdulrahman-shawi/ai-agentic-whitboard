@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { Folder } from 'lucide-react';
 import React, { useState } from 'react'
+import CreateNewBoardDailog from './CreateNewBoardDialog';
 
 function ProjectList() {
     const [projectList, setProjectList] = useState<any[]>([]);
@@ -12,7 +13,7 @@ function ProjectList() {
         <div className="flex flex-col items-center p-10 border rounded-xl mt-10">
           <Folder hanging={42} width={42} />
           <h2 className='text-lg font-semibold'>No Projects Found</h2>
-          <Button className='mt-5'>+ Create New Project</Button>
+          <CreateNewBoardDailog />
         </div>
         
       ) : (

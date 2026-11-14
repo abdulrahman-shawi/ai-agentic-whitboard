@@ -13,6 +13,7 @@ import {
 import { useUser } from "@clerk/nextjs";
 import { Archive, Files, LayoutGrid, Settings, SparkleIcon, User } from "lucide-react";
 import { usePathname } from "next/navigation";
+import CreateNewBoardDailog from "./CreateNewBoardDialog";
 
 export function AppSidebar() {
   const path = usePathname();
@@ -29,7 +30,7 @@ export function AppSidebar() {
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <Button>+ Create New Board</Button>
+          <CreateNewBoardDailog />
         </SidebarGroup>
         <SidebarGroup>
           <SidebarGroupLabel>Recent Boards</SidebarGroupLabel>
